@@ -12,7 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 25px;
+    padding-top: 25px;
 }
 
 .navbar ul {
@@ -52,6 +52,7 @@ body {
     text-align: center;
     width: 100%;
     bottom: 0;
+    padding-bottom: 25px;
 }
 
 .social-media a{
@@ -82,10 +83,6 @@ body {
     box-shadow: inset 0 0 0 2px rgba(255,255,255);
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
-}
-
-.footer {
-    margin: 0 0 25px 0;
 }
 
 .footer-navbar ul {
