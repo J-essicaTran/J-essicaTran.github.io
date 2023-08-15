@@ -1,4 +1,9 @@
-﻿/* _____NAVIGATION BAR_____ */
+﻿/* desktop: 1200px;
+laptop: 1024px;
+tablet: 768px;
+phone: 480px; */
+
+/* _____NAVIGATION BAR_____ */
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +38,30 @@ body {
     margin: 0 15px;
     font-size: 1.5rem;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 6px 13.5px;
+        margin: 0 11.25px;
+        font-size: 1.125rem;
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width: 568px) {
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 4.4px 9.9px;
+        margin: 0 8.25px;
+        font-size: 0.825rem;
+        text-align: center;
+    } 
 }
 
 .navbar a.active {
@@ -79,6 +108,74 @@ body {
     height: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .introduction {
+        text-align: center;
+        padding: 22.5px 0 18.75px 0;
+    }
+
+    .intro p.line1{
+        font-size: 67.5px;
+        color: white;
+        padding: 0 0 15px 0;
+    }
+    
+    .intro p.line2 {
+        font-size: 15px;
+        color: white;
+    }
+    
+    .intro img.sparkle1{
+        position: relative;
+        right: 243.75px;
+        top: 37.5px;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .intro img.sparkle2{
+        position: relative;
+        left: 243.75px;
+        bottom: 37.5px;
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .introduction {
+        text-align: center;
+        padding: 16.5px 0 13.75px 0;
+    }
+
+    .intro p.line1{
+        font-size: 49.5px;
+        color: white;
+        padding: 0 0 11px 0;
+    }
+    
+    .intro p.line2 {
+        font-size: 11px;
+        color: white;
+    }
+    
+    .intro img.sparkle1{
+        position: relative;
+        right: 178.75px;
+        top: 27.5px;
+        width: 55px;
+        height: 55px;
+    }
+    
+    .intro img.sparkle2{
+        position: relative;
+        left: 178.75px;
+        bottom: 27.5px;
+        width: 55px;
+        height: 55px;
+    }
+}
+
 .social-media {
     position: relative;
     bottom: 80px;
@@ -114,6 +211,42 @@ body {
     transform: translateY(-8px);
 }
 
+@media screen and (max-width: 768px) {
+    .social-media {
+        position: relative;
+        bottom: 60px;
+    }
+    
+    .social-media i{
+        text-align: center;
+        font-size: 22.5px;
+        color: white;
+        margin: 15px;
+        width: 45px;
+        padding: 11.25px 0 11.25px 0;
+        background-color: rgb(255, 255, 255,.3);
+        border-radius: 11.25px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .social-media {
+        position: relative;
+        bottom: 44px;
+    }
+    
+    .social-media i{
+        text-align: center;
+        font-size: 16.5px;
+        color: white;
+        margin: 11px;
+        width: 33px;
+        padding: 8.25px 0 8.25px 0;
+        background-color: rgb(255, 255, 255,.3);
+        border-radius: 8.25px;
+    }
+}
+
 .more-about-me {
     position: relative;
     bottom: 30px;
@@ -130,4 +263,36 @@ body {
 
 .more-about-me a:hover {
     box-shadow: inset 0 0 0 2px rgba(255,255,255);
+}
+
+@media screen and (max-width: 768px) {
+    .more-about-me {
+        position: relative;
+        bottom: 22.5px;
+    }
+    
+    .more-about-me a {
+        text-decoration: none;
+        font-size: 18.75px;
+        color: white;
+        padding: 15px;
+        background-color: rgb(255, 255, 255,.3);
+        border-radius: 37.5px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .more-about-me {
+        position: relative;
+        bottom: 16.5px;
+    }
+    
+    .more-about-me a {
+        text-decoration: none;
+        font-size: 13.75px;
+        color: white;
+        padding: 11px;
+        background-color: rgb(255, 255, 255,.3);
+        border-radius: 27.5px;
+    }
 }
