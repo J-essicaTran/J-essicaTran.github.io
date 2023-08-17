@@ -274,7 +274,7 @@ body {
 
 /* _____CONTENT - GALLERY______ */
 .gallery {
-    height: 550px;
+    height: fit-content;
     width: 1100px;
     border-radius: 25px;
     background-color: rgb(255, 255, 255,.3);
@@ -282,9 +282,44 @@ body {
     padding: 30px; /*TOP RIGHT BOTTOM LEFT*/
 }
 
+.gallery table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .gallery .title {
     color: white;
     font-size: 3rem;
+}
+
+.gallery-image {
+    position: relative;
+    text-align: center;
+    margin: 30px 15px 0 15px;
+}
+
+.gallery-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.gallery-image .overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 12.5px;
+    width: fit-content;
+    background-color: rgb(0, 0, 0,.45);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    color: white;
+    transition: .5s ease;
+    opacity:0;
+}
+
+.gallery-image:hover .overlay {
+    opacity: 1;
 }
 
 /* _____FOOTER_____ */
