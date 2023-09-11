@@ -35,31 +35,6 @@ body {
     text-align: center;
 }
 
-/* _____RESIZE NAVBAR_____ */
-@media screen and (max-width: 768px) {
-    .navbar a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding: 6px 13.5px;
-        margin: 0 11.25px;
-        font-size: 1.125rem;
-        text-align: center;
-    } 
-}
-
-@media screen and (max-width: 568px) {
-    .navbar a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding: 4.4px 9.9px;
-        margin: 0 8.25px;
-        font-size: 0.825rem;
-        text-align: center;
-    } 
-}
-
 .navbar a.active {
     background-color: rgb(255, 255, 255,.3);
     color: white;
@@ -353,33 +328,6 @@ body {
     transition-timing-function: ease-out;
 }
 
-/* _____RESIZE FOOTER - SOCIAL MEDIA ICONS_____ */
-@media screen and (max-width: 768px) {
-    .social-media i{
-        text-align: center;
-        font-size: 18.75px;
-        color: white;
-        margin: 3.75px;
-        width: 33.75px;
-        padding: 7.5px 0 7.5px 0;
-        background-color: rgb(255, 255, 255,.3);
-        border-radius: 11.25px;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    .social-media i{
-        text-align: center;
-        font-size: 13.75px;
-        color: white;
-        margin: 2.75px;
-        width: 24.75px;
-        padding: 5.5px 0 5.5px 0;
-        background-color: rgb(255, 255, 255,.3);
-        border-radius: 8.25px;
-    }
-}
-
 .social-media i:hover {
     box-shadow: inset 0 0 0 2px rgba(255,255,255);
     -webkit-transform: translateY(-8px);
@@ -404,30 +352,143 @@ body {
     padding: 20px 15px 0 15px;
 }
 
-/* _____RESIZE FOOTER - NAVIGATION_____ */
-@media screen and (max-width: 768px) {
-    .footer-navbar a {
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        display: block;
-        font-size: 13.5px;
-        padding: 15px 11.25px 0 11.25px;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    .footer-navbar a {
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        display: block;
-        font-size: 9.9px;
-        padding: 11px 8.25px 0 8.25px;
-    }
-}
-
 .footer-navbar a:hover{
     text-decoration: underline;
     color: white;
+}
+
+/* _____MEDIA QUERIES_____ */
+@media only screen and (max-width: 500px) {
+    /* _____NAVIGATION BAR_____ */
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 5px 10px;
+        margin: 0 2.5px;
+        font-size: 0.9rem;
+    }
+
+    /* _____FOOTER_____ */
+    .social-media i{
+        font-size: 18px;
+        margin: 4px;
+        width: 36px;
+        padding: 8px 0 8px 0;
+        border-radius: 12px;
+    }
+
+    .footer-navbar a {
+        font-size: 12.5px;
+        padding: 15px 5px 0 5px;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    /* _____NAVIGATION BAR_____ */
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 6px 12.5px;
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    /* _____FOOTER_____ */
+    .social-media i{
+        font-size: 20px;
+        margin: 4px;
+        width: 38px;
+        padding: 7.5px 0 7.5px 0;
+        border-radius: 12px;
+    }
+
+    .footer-navbar a {
+        font-size: 13.5px;
+        padding: 15px 7.5px 0 7.5px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* _____NAVIGATION BAR_____ */
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 7px 15px;
+        margin: 0 8px;
+        font-size: 1.2rem;
+    }
+
+    /* _____FOOTER_____ */
+    .social-media i{
+        font-size: 22.5px;
+        margin: 4px;
+        width: 42px;
+        padding: 8.5px 0 8.5px 0;
+        border-radius: 12.5px;
+    }
+
+    .footer-navbar a {
+        font-size: 15px;
+        padding: 15px 10px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* _____NAVIGATION BAR_____ */
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 7px 15px;
+        margin: 0 12.5px;
+        font-size: 1.45rem;
+    }
+
+    /* _____FOOTER_____ */
+    .social-media i{
+        font-size: 24px;
+        margin: 4px;
+        width: 43.5px;
+        padding: 9.5px 0 9.5px 0;
+        border-radius: 13px;
+    }
+
+    .footer-navbar a {
+        font-size: 17px;
+        padding: 15px 12.5px 0 12.5px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* _____NAVIGATION BAR_____ */
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 8px 18px;
+        margin: 0 15px;
+        font-size: 1.5rem;
+    } 
+
+    /* _____FOOTER_____ */
+    .social-media i {
+        font-size: 25px;
+        margin: 5px;
+        width: 45px;
+        padding: 10px 0 10px 0;
+        border-radius: 15px;
+    }
+
+    .footer-navbar a {
+        font-size: 18px;
+        padding: 20px 15px 0 15px;
+    }
 }
