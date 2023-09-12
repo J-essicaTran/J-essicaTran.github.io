@@ -1,4 +1,4 @@
-﻿/* _____NAVIGATION BAR_____ */
+/* _____NAVIGATION BAR_____ */
 * {
     margin: 0;
     padding: 0;
@@ -109,17 +109,24 @@ body {
 
 /* _____CONTENT - GAMES______ */
 .games {
+    text-decoration: none;
+    text-align: center;
+    display: block;
     height: fit-content;
     width: 1100px;
     border-radius: 25px;
     background-color: rgb(255, 255, 255,.3);
     margin-bottom: 50px;
-    padding: 30px; /*TOP RIGHT BOTTOM LEFT*/
+    padding: 30px;
 }
 
-.games table {
-    margin-left: auto;
-    margin-right: auto;
+.games ul {
+    list-style: none;
+    margin: 0;
+}
+
+.games li {
+    display: inline-block;
 }
 
 .game-container {
@@ -133,6 +140,7 @@ body {
 .games .title {
     color: white;
     font-size: 3rem;
+    text-align: left;
 }
 
 .game-image img {
@@ -147,6 +155,7 @@ body {
     border-radius: 0 0 25px 25px;
     background-color: rgb(255, 255, 255,.3);
     padding: 5px 10px 10px 10px;
+    text-align: left;
 }
 
 .rating-flex {
@@ -171,6 +180,9 @@ body {
 
 /* _____CONTENT - MUSIC______ */
 .music {
+    text-decoration: none;
+    text-align: center;
+    display: block;
     height: fit-content;
     width: 1100px;
     border-radius: 25px;
@@ -179,14 +191,19 @@ body {
     padding: 30px; /*TOP RIGHT BOTTOM LEFT*/
 }
 
-.music table {
-    margin-left: auto;
-    margin-right: auto;
+.music ul {
+    list-style: none;
+    margin: 0;
+}
+
+.music li {
+    display: inline-block;
 }
 
 .music .title {
     color: white;
     font-size: 3rem;
+    text-align: left;
 }
 
 .song-container {
@@ -215,6 +232,7 @@ body {
 }
 
 .song-info {
+    text-align: left;
     padding: 5px 10px 10px 15px;
 }
 
@@ -249,6 +267,9 @@ body {
 
 /* _____CONTENT - GALLERY______ */
 .gallery {
+    text-decoration: none;
+    text-align: center;
+    display: block;
     height: fit-content;
     width: 1100px;
     border-radius: 25px;
@@ -257,14 +278,19 @@ body {
     padding: 30px; /*TOP RIGHT BOTTOM LEFT*/
 }
 
-.gallery table {
-    margin-left: auto;
-    margin-right: auto;
+.gallery ul {
+    list-style: none;
+    margin: 0;
+}
+
+.gallery li {
+    display: inline-block;
 }
 
 .gallery .title {
     color: white;
     font-size: 3rem;
+    text-align: left;
 }
 
 .gallery-image {
@@ -423,6 +449,133 @@ body {
         font-size: 1rem;
         padding: 10px;
         border-radius: 50px;
+    }
+
+    /* _____CONTENT - GAMES______ */
+    .games {
+        width: 275px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+
+    .game-container {
+        margin: 20px 5px 0 5px;
+        font-size: 0; 
+    }
+
+    .games .title {
+        font-size: 1.5rem;
+    }
+
+    .game-image img {
+        height: 150px;
+        width: 150.5px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .game-info {
+        width: 150.5px;
+        height: 55px;
+        border-radius: 0 0 15px 15px;
+        padding: 5px 10px 10px 10px;
+    }
+
+    .game-info .game-title {
+        font-size: 0.75rem;
+    }
+
+    .rating-flex .rating-title {
+        font-size: 0.7rem;
+    }
+
+    .rating-flex .rating-stars {
+        padding-left: 5px;
+        font-size: 0.65rem;
+    }
+
+    /* _____CONTENT - MUSIC______ */
+    .music {
+        width: 275px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        padding: 15px; /*TOP RIGHT BOTTOM LEFT*/
+    }
+
+    .music .title {
+        font-size: 1.5rem;
+    }
+
+    .song-container {
+        width: 225px;
+        border-radius: 15px;
+        margin: 20px 0 0 0;
+        padding: 5px;
+    }
+
+    .song-container i {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-right: 2.5px;
+    }
+
+    .song-image img {
+        display: none;
+        height: 75px;
+        width: 75px;
+        border-radius: 15px;
+    }
+
+    .song-info {
+        padding: 5px 10px 5px 5px;
+    }
+
+    .song-info .line1 {
+        font-size: 0.75rem;
+    }
+
+    .song-info .line2 {
+        font-size: 0.7rem;
+    }
+
+    .song-info .preview-button {
+        border-radius: 8px;
+        padding: 0 7px 5px 7px;
+        margin-top: 5px;
+    }
+
+    .song-info .preview-button a {
+        font-size: 0.5rem;
+    }
+
+    /* _____CONTENT - GALLERY______ */
+    .gallery {
+        width: 275px;
+        border-radius: 25px;
+        margin-bottom: 50px;
+        padding: 15px; /*TOP RIGHT BOTTOM LEFT*/
+    }
+
+    .gallery .title {
+        font-size: 1.5rem;
+    }
+
+    .gallery-image {
+        margin: 20px 10px 0 10px;
+    }
+
+    .gallery-image img {
+        width: 100px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .gallery-image .overlay {
+        bottom: 8px;
+        left: 3px;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: 0.45rem;
     }
 
     /* _____FOOTER_____ */
