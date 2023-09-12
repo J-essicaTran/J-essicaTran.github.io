@@ -1,4 +1,4 @@
-/* _____NAVIGATION BAR_____ */
+﻿/* _____NAVIGATION BAR_____ */
 * {
     margin: 0;
     padding: 0;
@@ -514,16 +514,14 @@ body {
     }
 
     .song-container i {
-        font-size: 20px;
-        margin-top: 5px;
-        margin-right: 2.5px;
+        display: none;
     }
 
     .song-image img {
-        display: none;
         height: 75px;
         width: 75px;
-        border-radius: 15px;
+        margin: 5px 5px 2.5px 5px;
+        border-radius: 12.5px;
     }
 
     .song-info {
