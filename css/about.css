@@ -455,13 +455,12 @@ body {
     .games {
         width: 275px;
         border-radius: 20px;
-        margin-bottom: 50px;
-        padding: 15px;
+        margin-bottom: 25px;
+        padding: 15px 15px 20px 15px;
     }
 
     .game-container {
         margin: 20px 5px 0 5px;
-        font-size: 0; 
     }
 
     .games .title {
@@ -498,8 +497,8 @@ body {
     .music {
         width: 275px;
         border-radius: 20px;
-        margin-bottom: 50px;
-        padding: 15px; /*TOP RIGHT BOTTOM LEFT*/
+        margin-bottom: 25px;
+        padding: 15px 15px 20px 15px; /*TOP RIGHT BOTTOM LEFT*/
     }
 
     .music .title {
@@ -538,7 +537,7 @@ body {
 
     .song-info .preview-button {
         border-radius: 8px;
-        padding: 0 7px 5px 7px;
+        padding: 0 5px 6px 5px;
         margin-top: 5px;
     }
 
@@ -551,7 +550,7 @@ body {
         width: 275px;
         border-radius: 25px;
         margin-bottom: 50px;
-        padding: 15px; /*TOP RIGHT BOTTOM LEFT*/
+        padding: 15px 15px 20px 15px; /*TOP RIGHT BOTTOM LEFT*/
     }
 
     .gallery .title {
@@ -564,7 +563,6 @@ body {
 
     .gallery-image img {
         width: 100px;
-        height: auto;
         border-radius: 15px;
     }
 
@@ -601,6 +599,169 @@ body {
         padding: 6px 12.5px;
         margin: 0 5px;
         font-size: 1rem;
+    }
+
+    /* _____CONTENT - INFO_____ */
+    .info {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .info .left-panel .image {
+        height: 250px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .info .right-panel {
+        height: 250px;
+        width: 250px;
+        border-radius: 0 20px 20px 0;
+        padding: 10px;
+    }
+
+    .info .right-panel p.line1 {
+        font-size: 1.25rem;
+    }
+
+    .info .right-panel p.line2 {
+        font-size: 1rem;
+    }
+
+    .info .right-panel p.line3 {
+        font-size: 0.65rem;
+        padding-top: 5px;
+    }
+
+    .info .right-panel .download-cv {
+        padding-top: 18.5px;
+    }
+
+    .info .right-panel .download-cv a{
+        font-size: 1rem;
+        padding: 8.5px;
+        border-radius: 50px;
+    }
+
+    /* _____CONTENT - GAMES______ */
+    .games {
+        width: 450px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        padding: 20px 20px 25px 20px;
+    }
+
+    .game-container {
+        margin: 20px 10px 0 10px;
+    }
+
+    .games .title {
+        font-size: 1.25rem;
+    }
+
+    .game-image img {
+        height: 150px;
+        width: 150.5px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .game-info {
+        width: 150.5px;
+        height: 70px;
+        border-radius: 0 0 20px 20px;
+        padding: 5px 10px 10px 10px;
+    }
+
+    .game-info .game-title {
+        font-size: 0.85rem;
+    }
+
+    .rating-flex .rating-title {
+        font-size: 0.75rem;
+    }
+
+    .rating-flex .rating-stars {
+        padding-left: 5px;
+        font-size: 0.65rem;
+    }
+
+    /* _____CONTENT - MUSIC______ */
+    .music {
+        width: 450px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        padding: 20px 20px 25px 20px; /*TOP RIGHT BOTTOM LEFT*/
+    }
+
+    .music .title {
+        font-size: 1.25rem;
+    }
+
+    .song-container {
+        width: 350px;
+        border-radius: 15px;
+        margin: 20px 0 0 0;
+        padding: 15px;
+    }
+
+    .song-container i {
+        font-size: 25px;
+    }
+
+    .song-image img {
+        height: 100px;
+        width: 100px;
+        border-radius: 12.5px;
+    }
+
+    .song-info {
+        padding: 5px 10px 10px 15px;
+    }
+
+    .song-info .line1 {
+        font-size: 0.9rem;
+    }
+
+    .song-info .line2 {
+        font-size: 0.80rem;
+    }
+
+    .song-info .preview-button {
+        border-radius: 8px;
+        padding: 2px 8px 5px 8px;
+        margin-top: 15px;
+    }
+
+    .song-info .preview-button a {
+        font-size: 0.7rem;
+    }
+
+    /* _____CONTENT - GALLERY______ */
+    .gallery {
+        width: 450px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        padding: 20px 20px 20px 20px; /*TOP RIGHT BOTTOM LEFT*/
+    }
+
+    .gallery .title {
+        font-size: 1.25rem;
+    }
+
+    .gallery-image {
+        margin: 20px 10px 0 10px;
+    }
+
+    .gallery-image img {
+        width: 175px;
+        border-radius: 15px;
+    }
+
+    .gallery-image .overlay {
+        bottom: 12.5px;
+        left: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 0.6rem;
     }
 
     /* _____FOOTER_____ */
